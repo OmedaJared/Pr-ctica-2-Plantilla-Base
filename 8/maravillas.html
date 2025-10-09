@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Las 7 Maravillas del Mundo Moderno</h2>
+<p>Estas son las siete maravillas del mundo moderno, una muestra de la grandeza humana:</p>
+
+<div class="row">
+  <div class="col-md-4"><h5>Gran Muralla China</h5><img src="{{ url_for('static', filename='china.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Petra</h5><img src="{{ url_for('static', filename='petra.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Coliseo Romano</h5><img src="{{ url_for('static', filename='roma.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Chichén Itzá</h5><img src="{{ url_for('static', filename='mex.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Machu Picchu</h5><img src="{{ url_for('static', filename='peru.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Taj Mahal</h5><img src="{{ url_for('static', filename='india.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-12"><h5>Cristo Redentor</h5><img src="{{ url_for('static', filename='cristo.jpg') }}" class="img-fluid"></div>
+</div>
+{% endblock %}

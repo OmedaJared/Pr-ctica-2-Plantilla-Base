@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Vehículos Antiguos</h2>
+<p>La historia del automóvil comenzó a finales del siglo XIX, con inventores que transformaron el transporte para siempre.</p>
+
+<div class="row">
+  <div class="col-md-4"><h5>Ford Model T</h5><img src="{{ url_for('static', filename='ford.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Chevrolet Classic Six</h5><img src="{{ url_for('static', filename='chevrolet.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Mercedes-Benz 300 SL</h5><img src="{{ url_for('static', filename='mercedes.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Rolls-Royce Silver Ghost</h5><img src="{{ url_for('static', filename='rolls.jpg') }}" class="img-fluid"></div>
+  <div class="col-md-4"><h5>Cadillac V-16</h5><img src="{{ url_for('static', filename='cadillac.jpg') }}" class="img-fluid"></div>
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Animales Exóticos</h2>
+<p>El reino animal es diverso y fascinante. Aquí verás algunos ejemplos:</p>
+
+<h3>Acuáticos</h3>
+<img src="{{ url_for('static', filename='pulpo.jpg') }}" class="img-fluid m-2" style="max-width:300px;">
+<img src="{{ url_for('static', filename='manta.jpg') }}" class="img-fluid m-2" style="max-width:300px;">
+
+<h3>Terrestres</h3>
+<img src="{{ url_for('static', filename='okapi.jpg') }}" class="img-fluid m-2" style="max-width:300px;">
+<img src="{{ url_for('static', filename='capibara.jpg') }}" class="img-fluid m-2" style="max-width:300px;">
+
+<h3>Aéreos</h3>
+<img src="{{ url_for('static', filename='guacamayo.jpg') }}" class="img-fluid m-2" style="max-width:300px;">
+<img src="{{ url_for('static', filename='colibri.jpg') }}" class="img-fluid m-2" style="max-width:300px;">
+{% endblock %}
